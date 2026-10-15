@@ -1,0 +1,38 @@
+:host {
+  display: block;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto 24px;
+  padding: 0 16px;
+}
+ 
+.detail-cours {
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #dd0031;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+ 
+.detail-cours h2 {
+  margin: 0 0 12px;
+  font-size: 1.25rem;
+}
+ 
+.detail-cours p {
+  margin: 4px 0;
+  color: #4b5563;
+}
+ 
+.detail-cours--vide {
+  text-align: center;
+  background: #f9fafb;
+  border: 1px dashed #d1d5db;
+  box-shadow: none;
+}
+ 
+.detail-cours--vide p {
+  margin: 0;
+  color: #6b7280;
+}
