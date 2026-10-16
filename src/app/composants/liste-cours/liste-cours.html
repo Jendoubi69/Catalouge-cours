@@ -14,7 +14,7 @@ uppercase }}</span> }
 }
 
  <p>Durée : {{ c.duree }}</p>
- <p>Places disponibles : {{ c.places }}</p>
+ <p>{{ c.places | placesRestantes }}</p>
  </article>
   }@empty {
  <p class="liste-vide">Aucun cours ne correspond à la recherche.</p>
