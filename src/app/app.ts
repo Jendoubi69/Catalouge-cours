@@ -5,6 +5,7 @@ import {RouterOutlet, RouterLink, RouterLinkActive} from '@angular/router';
 import { Session } from './services/session';
 import { inject } from '@angular/core';
 import { Router } from '@angular/router';
+import { Inscriptions } from './services/inscriptions';
 
 @Component({
   imports: [EnTete, PiedPage,RouterOutlet, RouterLink, RouterLinkActive],
@@ -16,6 +17,7 @@ export class App {
   protected readonly title = signal('catalogue-cours');
   session = inject(Session);
   private router = inject(Router);
+  inscriptions = inject(Inscriptions);
   deconnecter() {
  this.session.deconnecter();
  this.router.navigateByUrl('/');
